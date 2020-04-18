@@ -73,6 +73,6 @@ Function nestTokens
 
 The result of Javascript [Babel parser (previously Babylon)](https://babeljs.io/) compiler is decoded into 4D classes.
 
-![class diagram](Documentation/classDiagram.svg)
+[![class diagram](Documentation/classDiagram.svg)](https://mesopelagique.github.io/Mesopotamia/Documentation/classDiagram.svg)
 
 Then 4D code is generated from the created node tree.
