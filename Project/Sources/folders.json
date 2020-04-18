@@ -1,7 +1,21 @@
 ﻿{
+	"Class": {
+		"classes": [
+			"ClassBody",
+			"ClassMethod"
+		]
+	},
+	"Comment": {
+		"classes": [
+			"CommentBlock",
+			"CommentLine"
+		]
+	},
 	"Declaration": {
 		"classes": [
+			"ClassDeclaration",
 			"Declaration",
+			"ExportDefaultDeclaration",
 			"FunctionDeclaration",
 			"VariableDeclaration"
 		]
@@ -14,19 +28,27 @@
 			"CallExpression",
 			"ConditionalExpression",
 			"Expression",
+			"LogicalExpression",
 			"MemberExpression",
+			"ObjectExpression",
 			"UpdateExpression"
 		]
 	},
 	"Literal": {
 		"classes": [
+			"BooleanLiteral",
 			"Literal",
+			"NullLiteral",
 			"NumericLiteral",
-			"StringLiteral"
+			"StringLiteral",
+			"TemplateElement",
+			"TemplateLiteral"
 		]
 	},
 	"Node": {
 		"groups": [
+			"Class",
+			"Comment",
 			"Declaration",
 			"Expression",
 			"Literal",
@@ -36,6 +58,7 @@
 			"File",
 			"Identifier",
 			"Node",
+			"ObjectProperty",
 			"Program",
 			"SwitchCase",
 			"VariableDeclarator"
@@ -52,6 +75,7 @@
 			"BreakStatement",
 			"ExpressionStatement",
 			"ForStatement",
+			"IfStatement",
 			"ReturnStatement",
 			"Statement",
 			"SwitchStatement"
