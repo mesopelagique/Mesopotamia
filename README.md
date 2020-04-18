@@ -1,13 +1,8 @@
 # Mesopotamia
 
+Convert Javascript to 4D code
 
-Decode result of Javascript [Babel parser (previously Babylon)](https://babeljs.io/) into 4D classes, then generate equivalent 4D code.
-
-![class diagram](Documentation/classDiagram.svg)
-
-## Convert JS to 4D Code
-
-Current result
+## Current result
 
 ### javascript
 
@@ -72,3 +67,12 @@ Function nestTokens
 	
 	$0:=$nestedTokens
 ```
+
+
+## How it works?
+
+The result of Javascript [Babel parser (previously Babylon)](https://babeljs.io/) compiler is decoded into 4D classes.
+
+![class diagram](Documentation/classDiagram.svg)
+
+Then 4D code is generated from the created node tree.
