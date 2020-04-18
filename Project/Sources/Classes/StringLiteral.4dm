@@ -1,8 +1,10 @@
 Class extends Literal
 
 Function toCode
-	$0:=This:C1470.code
+	$0:=Super:C1706.toCode()
 	
-Function to4DCode
-	$0:=This:C1470.code
+	If (Position:C15("'";$0)=1)
+		$0:="\""+Substring:C12($0;2;Length:C16($0)-2)+"\""
+	End if 
+	
 	

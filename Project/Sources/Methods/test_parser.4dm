@@ -10,7 +10,7 @@ $parser:=cs:C1710.Parser.new($transpiled;$code)
 $file:=$parser.parse()
 ASSERT:C1129(OB Instance of:C1731($file;cs:C1710.File))
 $program:=$file.program
-ASSERT:C1129(OB Instance of:C1731($program;cs:C1710.Program))
+ASSERT:C1129(OB Instance of:C1731($program;cs:C1710.Program))s
 
 $function:=$program.body[0]
 ASSERT:C1129(OB Instance of:C1731($function;cs:C1710.FunctionDeclaration))
@@ -28,5 +28,5 @@ For each ($statementOrDeclaration;$functionBody.body)
 	
 End for each 
 
-  //Folder(fk resources folder).file("test_toCode.js").setText($node.toCode())
-  //Folder(fk resources folder).file("test_to4DCode.js").setText($node.to4DCode())
+Folder:C1567(fk database folder:K87:14).folder("Project/Sources/Classes/").file("TestResult.4dm").setText($file.toCode())
+

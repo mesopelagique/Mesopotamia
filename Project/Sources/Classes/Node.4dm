@@ -39,12 +39,11 @@ Function toCode
 	$0:=This:C1470.toChildrenCode()
 	
 Function toChildrenCode
+	$sep:=String:C10($1)
 	$text:=""
+	  // map to code XXX use map, collectio formula
+	$map:=New collection:C1472()
 	For each ($node;This:C1470.children())
-		$text:=$text+$node.toCode()
+		$map.push($node.toCode())
 	End for each 
-	$0:=$text
-	
-Function to4DCode()
-	$text:=""
-	$0:=$text
+	$0:=$map.join($sep)

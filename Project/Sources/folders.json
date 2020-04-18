@@ -1,6 +1,7 @@
 ﻿{
 	"Declaration": {
 		"classes": [
+			"Declaration",
 			"FunctionDeclaration",
 			"VariableDeclaration"
 		]
@@ -12,12 +13,14 @@
 			"BinaryExpression",
 			"CallExpression",
 			"ConditionalExpression",
+			"Expression",
 			"MemberExpression",
 			"UpdateExpression"
 		]
 	},
 	"Literal": {
 		"classes": [
+			"Literal",
 			"NumericLiteral",
 			"StringLiteral"
 		]
@@ -30,13 +33,10 @@
 			"Statement"
 		],
 		"classes": [
-			"Declaration",
-			"Expression",
 			"File",
 			"Identifier",
-			"Literal",
+			"Node",
 			"Program",
-			"Statement",
 			"SwitchCase",
 			"VariableDeclarator"
 		]
@@ -53,12 +53,16 @@
 			"ExpressionStatement",
 			"ForStatement",
 			"ReturnStatement",
+			"Statement",
 			"SwitchStatement"
 		]
 	},
 	"test": {
 		"methods": [
 			"test_parser"
+		],
+		"classes": [
+			"TestResult"
 		]
 	},
 	"trash": {}
