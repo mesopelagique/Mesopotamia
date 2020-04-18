@@ -30,9 +30,13 @@
 			"Statement"
 		],
 		"classes": [
+			"Declaration",
+			"Expression",
 			"File",
 			"Identifier",
+			"Literal",
 			"Program",
+			"Statement",
 			"SwitchCase",
 			"VariableDeclarator"
 		]

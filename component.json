@@ -1,0 +1,20 @@
+{
+  "author" : "eric.marchand@4d.com",
+  "dependencies" : [
+
+  ],
+  "description" : "Parse babylon js AST to 4D code",
+  "devDependencies" : [
+    "mesopelagique\/classStoreDiagram"
+  ],
+  "keywords" : [
+    "ast",
+    "code",
+    "4d-component"
+  ],
+  "name" : "Mesopotamia",
+  "repository" : {
+    "type" : "git",
+    "url" : "https:\/\/mesopelagique@github.com\/mesopelagique\/Mesopotamia.git"
+  }
+}

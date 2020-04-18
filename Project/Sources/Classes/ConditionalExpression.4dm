@@ -1,1 +1,1 @@
-﻿Class extends Node
+Class extends Expression
