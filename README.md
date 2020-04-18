@@ -1,7 +1,16 @@
 # Mesopotamia
+[![language][code-shield]][code-url] [![language-top][code-top]][code-url] ![code-size][code-size] [![release][release-shield]][release-url] [![license][license-shield]][license-url] [![discord][discord-shield]][discord-url]
+<a href="https://paypal.me/ericphimage">
+<img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="35">
+</a>
 
-Convert Javascript to 4D code
+[<img align="left" src="logo.png" hspace="20">](#logo) Try to convert some Javascript to 4D code.
 
+```4d
+🏗 TODO: explain how to do it
+
+```
+<br>
 ## Current result
 
 ### javascript
@@ -76,3 +85,16 @@ The result of Javascript [Babel parser (previously Babylon)](https://babeljs.io/
 ![class diagram](Documentation/classDiagram.svg)
 
 Then 4D code is generated from the created node tree.
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[code-shield]: https://img.shields.io/static/v1?label=language&message=4d&color=blue
+[code-top]: https://img.shields.io/github/languages/top/mesopelagique/Mesopotamia.svg
+[code-size]: https://img.shields.io/github/languages/code-size/mesopelagique/Mesopotamia.svg
+[code-url]: https://developer.4d.com/
+[release-shield]: https://img.shields.io/github/v/release/mesopelagique/Mesopotamia
+[release-url]: https://github.com/mesopelagique/Mesopotamia/releases/latest
+[license-shield]: https://img.shields.io/github/license/mesopelagique/Mesopotamia
+[license-url]: LICENSE.md
+[discord-shield]: https://img.shields.io/badge/chat-discord-7289DA?logo=discord&style=flat
+[discord-url]: https://discord.gg/dVTqZHr

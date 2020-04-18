@@ -60,9 +60,6 @@
 	"test": {
 		"methods": [
 			"test_parser"
-		],
-		"classes": [
-			"TestResult"
 		]
 	},
 	"trash": {}
