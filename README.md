@@ -1,4 +1,5 @@
 # Mesopotamia
+
 [![language][code-shield]][code-url] [![language-top][code-top]][code-url] ![code-size][code-size] [![release][release-shield]][release-url] [![license][license-shield]][license-url] [![discord][discord-shield]][discord-url]
 <a href="https://paypal.me/ericphimage">
 <img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="35">
@@ -82,9 +83,14 @@ Function nestTokens
 
 The result of Javascript [Babel parser (previously Babylon)](https://babeljs.io/) compiler is decoded into 4D classes.
 
-![class diagram](Documentation/classDiagram.svg)
+[![class diagram](Documentation/classDiagram.svg)](https://mesopelagique.github.io/Mesopotamia/Documentation/classDiagram.svg)
 
 Then 4D code is generated from the created node tree.
+
+## TODO
+
+- [ ] Like [JSONToCode](https://github.com/mesopelagique/JSONToCode) create a web interface, and maybe macro (but js need to be executed for that, offscreen area with webpack?)
+- [ ] Support more JS code.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
