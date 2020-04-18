@@ -57,7 +57,7 @@ Function nestTokens
 	$sections:=New collection()
 	
 	For ($i:=0$numTokens:=$tokens.length;$i<$numTokens;1)
-		$token:=$tokens[i]
+		$token:=$tokens[$i]
 		Case of 
 			: ($token[0]="#")
 				  // TODO merge with next case 
