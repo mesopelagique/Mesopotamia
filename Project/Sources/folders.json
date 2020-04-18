@@ -1,0 +1,61 @@
+﻿{
+	"Declaration": {
+		"classes": [
+			"FunctionDeclaration",
+			"VariableDeclaration"
+		]
+	},
+	"Expression": {
+		"classes": [
+			"ArrayExpression",
+			"AssignmentExpression",
+			"BinaryExpression",
+			"CallExpression",
+			"ConditionalExpression",
+			"MemberExpression",
+			"UpdateExpression"
+		]
+	},
+	"Literal": {
+		"classes": [
+			"NumericLiteral",
+			"StringLiteral"
+		]
+	},
+	"Node": {
+		"groups": [
+			"Declaration",
+			"Expression",
+			"Literal",
+			"Statement"
+		],
+		"classes": [
+			"File",
+			"Identifier",
+			"Program",
+			"SwitchCase",
+			"VariableDeclarator"
+		]
+	},
+	"private": {
+		"methods": [
+			"generateClasses"
+		]
+	},
+	"Statement": {
+		"classes": [
+			"BlockStatement",
+			"BreakStatement",
+			"ExpressionStatement",
+			"ForStatement",
+			"ReturnStatement",
+			"SwitchStatement"
+		]
+	},
+	"test": {
+		"methods": [
+			"test_do"
+		]
+	},
+	"trash": {}
+}
