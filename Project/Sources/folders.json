@@ -58,7 +58,7 @@
 	},
 	"test": {
 		"methods": [
-			"test_do"
+			"test_parser"
 		]
 	},
 	"trash": {}
