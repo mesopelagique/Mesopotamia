@@ -10,7 +10,7 @@ $parser:=cs:C1710.Parser.new($transpiled;$code)
 $file:=$parser.parse()
 ASSERT:C1129(OB Instance of:C1731($file;cs:C1710.File))
 $program:=$file.program
-ASSERT:C1129(OB Instance of:C1731($program;cs:C1710.Program))s
+ASSERT:C1129(OB Instance of:C1731($program;cs:C1710.Program))
 
 $function:=$program.body[0]
 ASSERT:C1129(OB Instance of:C1731($function;cs:C1710.FunctionDeclaration))
