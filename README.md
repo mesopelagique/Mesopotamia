@@ -45,19 +45,19 @@ Function nestTokens
 	$sections:=New collection()
 	
 	For ($i:=0$numTokens:=$tokens.length;$i<$numTokens;1)
-		$0:=$token$tokens[i]
+		$token:=$tokens[i]
 		Case of 
 			: ($token[0]="#")
 				  // TODO merge with next case 
 			: ($token[0]="^")
 				$collector.push($token)
 				$sections.push($token)
-				$0:=$collector$0:=$token[4]New collection()
+				$collector:=$token[4]:=New collection()
 				  // break
 			: ($token[0]="/")
-				$0:=$section$sections.pop()
-				$0:=$section[5]$token[2]
-				$0:=$collectorChoose($sections.length>0;$sections[sections.length-1][4];$nestedTokens)  // TODO heck that alternate path could be executed even if false, if not do a If Else
+				$section:=$sections.pop()
+				$section[5]:=$token[2]
+				$collector:=Choose($sections.length>0;$sections[sections.length-1][4];$nestedTokens)  // TODO heck that alternate path could be executed even if false, if not do a If Else
 				  // break
 			Else 
 				$collector.push($token)
