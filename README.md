@@ -1,9 +1,12 @@
 # Mesopotamia
 
 [![language][code-shield]][code-url] [![language-top][code-top]][code-url] ![code-size][code-size] [![release][release-shield]][release-url] [![license][license-shield]][license-url] [![discord][discord-shield]][discord-url]
-
+[![Sponsor](https://img.shields.io/badge/Sponsor-%F0%9F%A7%A1-white.svg?style=flat)](https://github.com/sponsors/phimage)
+<a href="https://www.patreon.com/phimage">
+<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="20">
+</a>
 <a href="https://paypal.me/ericphimage">
-<img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="35">
+<img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="20">
 </a>
 
 [<img align="left" src="logo.png" hspace="20">](#logo) Try to convert some Javascript to 4D code.
