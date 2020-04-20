@@ -9,15 +9,18 @@
 <img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="20">
 </a>
 
-[<img align="left" src="logo.png" hspace="20">](#logo) Try to convert some Javascript to 4D code.
+Convert when possible Javascript to 4D code.
 
-```4d
-🏗 TODO: explain how to do it
+## WebServer
 
-```
-<br>
+This component provide a web server with a page to paste your avascript to convert
 
-## Current result
+preview
+
+You could open this component and open the default URL [http://localhost:8119](http://localhost:8119) _(as defined by component [settings.4DSettings](Project/Sources/settings.4DSettings))_
+
+
+## Example 
 
 ### javascript
 
@@ -47,6 +50,7 @@ function nestTokens (tokens) {
           collector.push(token);
       }
     }
+}
 ```
 
 ### 4D
@@ -91,6 +95,12 @@ The result of Javascript [Babel parser (previously Babylon)](https://babeljs.io/
 [![class diagram](Documentation/classDiagram.svg)](https://mesopelagique.github.io/Mesopotamia/Documentation/classDiagram.svg)
 
 Then 4D code is generated from the created node tree.
+
+## Acknowledgment
+
+- Javascript editor by [Ace](https://ace.c9.io/)
+- Javascript code parsing by [Babel parser (previously Babylon)](https://babeljs.io/) 
+- Code syntax highlighting by [highlightjs](https://highlightjs.org/) with [4d addons](https://github.com/highlightjs/highlightjs-4d)
 
 ## TODO
 
