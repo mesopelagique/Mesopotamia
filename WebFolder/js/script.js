@@ -24,6 +24,23 @@ var postChange = function(code) {
         console.error(error);
     }
 };
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return decodeURIComponent(c.substring(name.length, c.length));
+      }
+    }
+    return "";
+  }
+  function setCookie(cname, cvalue ) {
+    document.cookie = cname + "=" + encodeURIComponent(cvalue)+ ";;path=/";
+  }
 
 window.onload = function() {
     var editor = ace.edit("editor");
@@ -31,14 +48,15 @@ window.onload = function() {
     editor.session.setMode("ace/mode/javascript");
     editor.session.on('change', function(delta) {
         var code=editor.getValue();
-        document.cookie = encodeURIComponent(code);
+        document.cookie = setCookie("code", code);
         postChange(code);
     });
 
     // first event
     var code=editor.getValue();
-    if ( document.cookie ) {
-        code=decodeURIComponent(document.cookie);
+    var cookie=getCookie("code")
+    if (cookie != "") {
+        code=cookie;
     }
     editor.setValue(code);
 
