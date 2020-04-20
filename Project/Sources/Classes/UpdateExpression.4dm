@@ -1,8 +1,7 @@
 Class extends Expression
 
 Function toCode
-	  // $0:=Super.toCode()
-	
+	C_TEXT:C284($0)
 	Case of 
 		: (Position:C15("++";This:C1470.code)=1)
 			$0:="1"

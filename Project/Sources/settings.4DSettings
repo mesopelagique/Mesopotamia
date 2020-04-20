@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="3">
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
 	<com.4d>
 		<web>
 			<standalone_server>
@@ -6,5 +6,8 @@
 			</standalone_server>
 		</web>
 		<general execute_host_database_event="true"/>
+		<compiler>
+			<options compilation_path="3"/>
+		</compiler>
 	</com.4d>
 </preferences>

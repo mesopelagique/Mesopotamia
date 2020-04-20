@@ -1,6 +1,7 @@
 Class extends Declaration
 
-Function toCode()
+Function toCode
+	C_TEXT:C284($0)
 	  // TODO superclass
 	$0:="// Class "+This:C1470.id.name+"\n"
 	

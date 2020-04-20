@@ -1,10 +1,10 @@
 //%attributes = {}
-
-
+C_TEXT:C284($transpiled;$code;$functionName)
 $transpiled:=Folder:C1567(fk resources folder:K87:11).file("test_result.json").getText()
 $code:=Folder:C1567(fk resources folder:K87:11).file("test.js").getText("utf-8";Document with LF:K24:22)
   //$code:=Split string($code;"\n";sk trim spaces).join("")
 
+C_OBJECT:C1216($parser;$file;$program;$function;$functionBody;$parameter;$statementOrDeclaration)
 $parser:=cs:C1710.Parser.new($transpiled;$code)
 
 $file:=$parser.parse()

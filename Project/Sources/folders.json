@@ -86,5 +86,11 @@
 			"test_parser"
 		]
 	},
+	"Web": {
+		"methods": [
+			"MesopotamiaWebServer",
+			"MesopotamiaWebService"
+		]
+	},
 	"trash": {}
 }

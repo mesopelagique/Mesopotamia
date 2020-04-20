@@ -1,7 +1,9 @@
 //%attributes = {}
 
+C_OBJECT:C1216($classFolder;$file)
 $classFolder:=Folder:C1567(fk database folder:K87:14).folder("Project/Sources/Classes/")
 
+C_OBJECT:C1216($1;$ast;$file)
 $ast:=$1
 If ($ast.type#Null:C1517)
 	
@@ -17,7 +19,7 @@ If ($ast.type#Null:C1517)
 	
 End if 
 
-
+C_TEXT:C284($key)
 For each ($key;$ast)
 	
 	Case of 
@@ -29,6 +31,7 @@ For each ($key;$ast)
 			
 		: (Value type:C1509($ast[$key])=Is collection:K8:32)
 			
+			C_VARIANT:C1683($node)
 			For each ($node;$ast[$key])
 				If (Value type:C1509($node)=Is object:K8:27)
 					
