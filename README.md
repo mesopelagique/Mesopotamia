@@ -1,4 +1,4 @@
-# Mesopotamia
+﻿# Mesopotamia
 
 [![language][code-shield]][code-url] [![language-top][code-top]][code-url] ![code-size][code-size] [![release][release-shield]][release-url] [![license][license-shield]][license-url] [![discord][discord-shield]][discord-url]
 [![Sponsor](https://img.shields.io/badge/Sponsor-%F0%9F%A7%A1-white.svg?style=flat)](https://github.com/sponsors/phimage)
@@ -9,15 +9,15 @@
 <img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="20">
 </a>
 
-Convert when possible Javascript to 4D code.
+Convert Javascript to 4D code.
 
 ## WebServer
 
-This component provide a web server with a page to paste your avascript to convert
+This component provide a web page to paste your javascript to convert.
 
-preview
+![preview](Documentation/preview.png)
 
-You could open this component and open the default URL [http://localhost:8119](http://localhost:8119) _(as defined by component [settings.4DSettings](Project/Sources/settings.4DSettings))_
+> You could open this component and open the default URL [http://localhost:8119](http://localhost:8119) _(as defined by component [settings.4DSettings](Project/Sources/settings.4DSettings))_
 
 
 ## Example 
@@ -105,6 +105,7 @@ Then 4D code is generated from the created node tree.
 ## TODO
 
 - [ ] Support more JS code.
+- [ ] Factorize code
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

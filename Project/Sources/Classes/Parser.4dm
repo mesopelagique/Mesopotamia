@@ -15,7 +15,11 @@ Function parse
 Function parseNode
 	C_OBJECT:C1216($0;$1;$node)
 	$node:=$1
-	$0:=cs:C1710[$node.type].new($node;This:C1470.code)
+	If (cs:C1710[$node.type]=Null:C1517)
+		$0:=cs:C1710.UnknownNode.new($node;This:C1470.code)
+	Else 
+		$0:=cs:C1710[$node.type].new($node;This:C1470.code)
+	End if 
 	
 	  //$0.children:=New collection()
 	C_TEXT:C284($key)

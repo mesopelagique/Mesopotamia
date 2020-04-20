@@ -28,9 +28,13 @@
 			"CallExpression",
 			"ConditionalExpression",
 			"Expression",
+			"FunctionExpression",
 			"LogicalExpression",
 			"MemberExpression",
+			"NewExpression",
 			"ObjectExpression",
+			"ThisExpression",
+			"UnaryExpression",
 			"UpdateExpression"
 		]
 	},
@@ -40,6 +44,7 @@
 			"Literal",
 			"NullLiteral",
 			"NumericLiteral",
+			"RegExpLiteral",
 			"StringLiteral",
 			"TemplateElement",
 			"TemplateLiteral"
@@ -55,12 +60,14 @@
 			"Statement"
 		],
 		"classes": [
+			"CatchClause",
 			"File",
 			"Identifier",
 			"Node",
 			"ObjectProperty",
 			"Program",
 			"SwitchCase",
+			"UnknownNode",
 			"VariableDeclarator"
 		]
 	},
@@ -75,12 +82,16 @@
 		"classes": [
 			"BlockStatement",
 			"BreakStatement",
+			"DoWhileStatement",
 			"ExpressionStatement",
+			"ForOfStatement",
 			"ForStatement",
 			"IfStatement",
+			"LabeledStatement",
 			"ReturnStatement",
 			"Statement",
-			"SwitchStatement"
+			"SwitchStatement",
+			"TryStatement"
 		]
 	},
 	"test": {
