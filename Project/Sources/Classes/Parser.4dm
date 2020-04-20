@@ -4,8 +4,13 @@ Class constructor
 	This:C1470.code:=$2
 	
 Function parse
-	C_OBJECT:C1216($0)
-	$0:=This:C1470.parseNode(JSON Parse:C1218(This:C1470.transpiled))
+	C_OBJECT:C1216($0;$transpiled)
+	$transpiled:=JSON Parse:C1218(This:C1470.transpiled)
+	If (This:C1470.code=Null:C1517)
+		This:C1470.code:=$transpiled.code
+		$transpiled:=$transpiled.ast
+	End if 
+	$0:=This:C1470.parseNode($transpiled)
 	
 Function parseNode
 	C_OBJECT:C1216($0;$1;$node)

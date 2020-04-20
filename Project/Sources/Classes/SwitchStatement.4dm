@@ -18,7 +18,10 @@ Function toCode
 		Else 
 			C_OBJECT:C1216($consequent)
 			For each ($consequent;$case.consequent)
-				$0:=$0+$consequent.toCode()+"\n"  // TODO use node list codes
+				C_TEXT:C284($line)
+				For each ($line;Split string:C1554($consequent.toCode();"\n"))
+					$0:=$0+"  "+$line+"\n"
+				End for each 
 			End for each 
 		End if 
 	End for each 

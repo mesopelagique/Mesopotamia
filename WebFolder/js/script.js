@@ -1,57 +1,46 @@
 "use strict";
 
-var postChange = function(jsonString) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", window.location, true);
-    xhr.setRequestHeader("Content-type", "application/json");
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status === 200) {
-            var responseText = xhr.responseText;
+var postChange = function(code) {
+    var options={ast: true, code: false};
+    try {
+        var transpiled=Babel.transform(code, options);
+        transpiled.code=code;
 
-            document.getElementById("4dcode").innerText = responseText;
-            document.querySelectorAll('pre code').forEach((block) => {
-                hljs.highlightBlock(block);
-            }); 
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", window.location, true);
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status === 200) {
+                var responseText = xhr.responseText;
+
+                document.getElementById("4dcode").innerText = responseText;
+                document.querySelectorAll('pre code').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            }
         }
+        xhr.send(JSON.stringify(transpiled));
+    } catch(error) {
+        console.error(error);
     }
-    xhr.send(jsonString);
 };
 
 window.onload = function() {
-    // create the editor
-    var container = document.getElementById("jsoneditor");
-    var options = {
-        mode: 'code', 
-        modes: ['code', 'tree'],
-        onError: function (err) {
-            alert(err.toString());
-        },
-        onModeChange: function (newMode, oldMode) {
-            console.log('Mode switched from', oldMode, 'to', newMode);
-        },
-        onChangeText: function (jsonString) {
-            postChange(jsonString); 
-        }
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+    editor.session.on('change', function(delta) {
+        var code=editor.getValue();
+        document.cookie = encodeURIComponent(code);
+        postChange(code);
+    });
+
+    // first event
+    var code=editor.getValue();
+    if ( document.cookie ) {
+        code=decodeURIComponent(document.cookie);
     }
-    var editor = new JSONEditor(container, options);
-
-    // set json
-    var initialJson = {
-        "Array": [1, 2, 3],
-        "Boolean": true,
-        "Null": null,
-        "Number": 123,
-        "Object": {"a": "b", "c": "d"},
-        "String": "Hello World"
-    }
-    editor.set(initialJson);
-    hljs.initHighlightingOnLoad();
-
-    // get json
-    var updatedJson = editor.get();
-
+    editor.setValue(code);
 
     hljs.initHighlightingOnLoad();
-    // First conversion
-    postChange(JSON.stringify(updatedJson));
 };

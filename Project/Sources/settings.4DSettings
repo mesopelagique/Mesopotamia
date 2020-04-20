@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
 	<com.4d>
 		<web>
 			<standalone_server>
-				<configuration allow_ssl="false" port_number="8457" publish_at_startup="true"/>
+				<configuration allow_ssl="false" port_number="8119" publish_at_startup="true"/>
 			</standalone_server>
 		</web>
 		<general execute_host_database_event="true"/>

@@ -2,20 +2,23 @@
 <html class="h-100">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Convert JSON to 4D Code</title>
-    <link href="jsoneditor/dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
-    <link href="style/darktheme.css" rel="stylesheet" type="text/css">
-    <link href="style/atom-one-dark.css" rel="stylesheet">
+    <title>Convert Javascript to 4D Code</title>
+    <link href="style/monokai.css" rel="stylesheet">
     <link href="style/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="container-fluid h-100">
     <section class="row h-100">
-        <div class="col-md-6 col-sm-6 my-3" id="jsoneditor"></div>
+        <div class="col-md-6 col-sm-6 my-3" id="editor">function foo(items) {
+    var x = "All this will be converted to 4D Code";
+    return x;
+}
+        </div>
         <div class="col-md-6 col-sm-6 my-3"><pre class="h-100"><code class="lang-4d hljs h-100" id="4dcode"></code></pre></div>
     </section>
-    <script src="jsoneditor/dist/jsoneditor.min.js"></script>
+    <script src="js/babel.min.js"></script>
     <script src="js/highlight.pack.js"></script>
     <script src="js/highlight.4d.min.js"></script>
+    <script src="ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
