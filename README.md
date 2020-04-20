@@ -104,7 +104,6 @@ Then 4D code is generated from the created node tree.
 
 ## TODO
 
-- [ ] Like [JSONToCode](https://github.com/mesopelagique/JSONToCode) create a web interface, and maybe macro (but js need to be executed for that, offscreen area with webpack?)
 - [ ] Support more JS code.
 
 <!-- MARKDOWN LINKS & IMAGES -->
